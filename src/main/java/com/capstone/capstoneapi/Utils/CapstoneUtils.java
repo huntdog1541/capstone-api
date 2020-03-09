@@ -20,6 +20,26 @@ public class CapstoneUtils {
         return data;
     }
 
+    public static String hex(int i)
+    {
+        return Integer.toString(i, 16);
+    }
+
+    public static String hex(long i)
+    {
+        return Long.toString(i, 16);
+    }
+
+    public static String array2hex(byte[] arr)
+    {
+        String ret = "";
+        for(int i = 0; i<arr.length; i++)
+        {
+            ret += String.format("0x02x ", arr[i]);
+        }
+        return ret;
+    }
+
     public static int getArchitecture(String arch)
     {
         switch (arch.toLowerCase())

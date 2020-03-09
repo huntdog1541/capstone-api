@@ -18,6 +18,8 @@ public class CapstoneRequest {
     private int arch_num;
     private int mode_num;
 
+    private long address = 0x1000L;
+
 
     public void updateValues()
     {
@@ -71,5 +73,13 @@ public class CapstoneRequest {
 
     public void setMode_num(int mode_num) {
         this.mode_num = mode_num;
+    }
+
+    public long getAddress() {
+        return address;
+    }
+
+    public void setAddress(long address) {
+        this.address = address;
     }
 }

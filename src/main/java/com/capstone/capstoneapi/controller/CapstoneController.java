@@ -19,6 +19,7 @@ public class CapstoneController
         System.out.println("Code: " + capstoneRequest.getCode() + " Syntax: " + capstoneRequest.getSyntax());
         capstoneRequest.updateValues();
         System.out.println("Arch_Num: " + capstoneRequest.getArch_num() + " Mode_Num: " + capstoneRequest.getMode_num());
+        capstoneServices.execute(capstoneRequest);
         return capstoneRequest;
     }
 }
